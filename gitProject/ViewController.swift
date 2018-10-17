@@ -16,13 +16,17 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
          print(message)
         print(reverse(text: "stressed"))
+        let reversed=reverse(text: "stressed")
+        print(reversed)
+        text.text=reversed
         
     }
     
     func reverse(text: String) -> String {
         return String(text.reversed())
     }
-
+    @IBOutlet weak var text: UILabel!
+    
 
 }
 
